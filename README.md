@@ -2,7 +2,7 @@
 Glasses that take photos of the field of view using a blinking sensor and transfer the image to the cloud for further processing
 
 ## General service description
-![Set of assembled user devices](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photo/BlinkPhotoGlasses.User_devicesX6_2.jpg)
+![Set of assembled user devices](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.User_devicesX6_2.jpg)
 The system consists of a set of user devices in the form of glasses with a built-in camera and a sensor that detects blinking.
 User devices connect to the network via Wi-Fi (directly) or Bluetooth (with intermediate mobile device)
 When the sensor is triggered (a single blink or a specified set of eyes movement), the user’s field of view is captured and a time stamp with a geotag is sent to the central server. In this case, the photo is saved in the device’s memory, which stores a certain number of recent photos with the corresponding timestamps and geotags.
@@ -15,7 +15,7 @@ The result can be displayed in the web version or mobile application, in which t
  
 
 ## Description of the user device 
-![Set of assembled user devices](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photo/BlinkPhotoGlasses.User_devicesX6_2.jpg)
+![Set of assembled user devices](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.User_devicesX6_2.jpg)
 
 It consists of a frame in the form of glasses (without diopters) on which the remaining components are attached. A camera is mounted on the front that records the user’s field of view. Opposite one of the eyes there is an analog IR sensor aimed at the white of the eye. The sensor is connected to an auxiliary controller (based on Atmega 328P). The signal about the occurrence of this event is transmitted to the main controller (Raspberri Pi Zero). Power is provided by an 18650 battery, which can be charged using the TP4056 charge controller via microUSB port.
 
@@ -32,7 +32,7 @@ The auxiliary controller runs on firmware written in C++, the main controller is
 
 ## “Master” device for testing
 
-!["Master" device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Wiring_diagram/BlinkPhotoGlasses.Master_device.jpg)
+!["Master" device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.Master_device.jpg)
 
 For testing purposes, a test “master” device has also been developed, which emulates some server functions (in particular, requesting photos) and displays them on the built-in screen. The test master device does not require a network connection - by default it works with all devices on the same local network
 Consists of a Raspberri Pi Zero controller with a connected touch screen and power supply
@@ -106,15 +106,15 @@ Further development of the system
  
 ## Photos
 
-![User device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photo/BlinkPhotoGlasses.User_device.jpg)
-![User device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photo/BlinkPhotoGlasses.User_device2.jpg)
-![User device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photo/BlinkPhotoGlasses.User_device3.jpg)
-![Set of assembled user devicesMain components of user device before assemly](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photo/BlinkPhotoGlasses.Components.jpg)
-![Main controllers of user device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photo/BlinkPhotoGlasses.MainComponents.jpg)
-![Programming of user device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photo/BlinkPhotoGlasses.Controllers_Programming.jpg)
-![Set of assembled user devices](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photo/BlinkPhotoGlasses.User_devicesX2.jpg)
-![Set of assembled user devices](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photo/BlinkPhotoGlasses.User_devicesX6.jpg)
-![Set of assembled user devices](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photo/BlinkPhotoGlasses.User_devicesX6_2.jpg)
+![User device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.User_device.jpg)
+![User device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.User_device2.jpg)
+![User device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.User_device3.jpg)
+![Set of assembled user devicesMain components of user device before assemly](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.Components.jpg)
+![Main controllers of user device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.MainComponents.jpg)
+![Programming of user device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.Controllers_Programming.jpg)
+![Set of assembled user devices](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.User_devicesX2.jpg)
+![Set of assembled user devices](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.User_devicesX6.jpg)
+![Set of assembled user devices](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.User_devicesX6_2.jpg)
 
 
 
