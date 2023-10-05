@@ -44,7 +44,6 @@ Consists of a Raspberri Pi Zero controller with a connected touch screen and pow
 The master device emulates the functions of a web server. When you turn on several user devices on the same local network (connected to the same WiFi router), each of them opens a network connection with the master device. The master device records packets with time stamps from each device. If the packets meet a specified criterion (for example, the difference between the moment of blinking on several devices is less than a specified range), a request is sent to the corresponding devices to send a photo. The user device converts the photo into a data set and sends it to the server address. The server stores the image in memory and displays it on the screen.
  
 ## Main system parameters for User device:
-
 * Main controller 		– Raspberry Pi Zero W 
 * Main processor 		– 1 GGh, ARM1176JZ-F
 * Graphic processor 		– VideoCore IV	48+
@@ -52,7 +51,6 @@ The master device emulates the functions of a web server. When you turn on sever
 * RAM 				– 512 Mb DDR2
 * Memory 			– 8 Gb (microSD) 
 * Communication 		– WiFi 802.11 b/g/n, Bluetooth 4.1 
-
 * Connectors			– MicroUSB, miniHDMI
 * Secondary controller		– Arduino Nano
 * Secondary processor 		– 16 MGh, ATmega328P
