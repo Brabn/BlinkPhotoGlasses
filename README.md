@@ -39,73 +39,69 @@ Consists of a Raspberri Pi Zero controller with a connected touch screen and pow
 Logic of the master device (for tests)
 The master device emulates the functions of a web server. When you turn on several user devices on the same local network (connected to the same WiFi router), each of them opens a network connection with the master device. The master device records packets with time stamps from each device. If the packets meet a specified criterion (for example, the difference between the moment of blinking on several devices is less than a specified range), a request is sent to the corresponding devices to send a photo. The user device converts the photo into a data set and sends it to the server address. The server stores the image in memory and displays it on the screen.
  
-Main system parameters for User device:
-•	Main controller		Raspberry Pi Zero W
-•	Main processor		1 GGh, ARM1176JZ-F 
-•	Graphic processor		VideoCore IV	48+
-•	Chipset			Broadcom BCM2835 
-•	RAM				512 Mb DDR2
-•	Memory			8 Gb (microSD)
-•	Communication		WiFi 802.11 b/g/n, Bluetooth 4.1
-•	Connectors			microUSB, miniHDMI
-•	Secondary controller		Arduino Nano
-•	Secondary processor 		16 MGh, ATmega328P
-•	Secondary controller memory	2 kB SRAM, 1kB EEPROM
-•	Camera 			Sony IMX219
-•	Camera resolution		8 Mp (3280 х 2464)
-•	Supporting video formats	1080р @ 30fps, 720p @ 60 fps и 640 х 480p @ 90fps
-•	Matrix size			¼’
-•	Pixel size			1.4μm х 1.4μm 
-•	Blinking sensor		TCRT5000
-•	Detector type			phototransistor
-•	Peak operating distance	2.5 mm
-•	Emitter wavelength		950 μm
-•	Accumulator type		Li-Ion 18650 (Panasonic NCR18650)
-•	Accumulator size 		3400 mAh (3.7V) 
-•	Weight				65g (main components)
-				110g (include glasses, components mount and wires
+## Main system parameters for User device:
+* Main controller		Raspberry Pi Zero W
+* Main processor		1 GGh, ARM1176JZ-F 
+* Graphic processor		VideoCore IV	48+
+* Chipset			Broadcom BCM2835 
+* RAM				512 Mb DDR2
+* Memory			8 Gb (microSD)
+* Communication		WiFi 802.11 b/g/n, Bluetooth 4.1
+* Connectors			microUSB, miniHDMI
+* Secondary controller		Arduino Nano
+* Secondary processor 		16 MGh, ATmega328P
+* Secondary controller memory	2 kB SRAM, 1kB EEPROM
+* Camera 			Sony IMX219
+* Camera resolution		8 Mp (3280 х 2464)
+* Supporting video formats	1080р @ 30fps, 720p @ 60 fps и 640 х 480p @ 90fps
+* Matrix size			¼’
+* Pixel size			1.4μm х 1.4μm 
+* Blinking sensor		TCRT5000
+* Detector type			phototransistor
+* Peak operating distance	2.5 mm
+* Emitter wavelength		950 μm
+* Accumulator type		Li-Ion 18650 (Panasonic NCR18650)
+* Accumulator size 		3400 mAh (3.7V) 
+* Weight				65g (main components)
+					110g (include glasses, components mount and wires
 
+## Main system parameter for “Master” device
+* Main controller		Raspberry Pi Zero W
+* Main processor		1 GGh, ARM1176JZ-F 
+* Graphic processor		VideoCore IV	48+
+* Chipset			Broadcom BCM2835 
+* RAM				512 Mb DDR2
+* Memory			8 Gb (microSD)
+* Communication		WiFi 802.11 b/g/n, Bluetooth 4.1
+* Connectors			microUSB, miniHDMI
+* Screen size			2.8’
+* Screen resolution		320x240px
 
-Main system parameter for “Master” device
-•	Main controller		Raspberry Pi Zero W
-•	Main processor		1 GGh, ARM1176JZ-F 
-•	Graphic processor		VideoCore IV	48+
-•	Chipset			Broadcom BCM2835 
-•	RAM				512 Mb DDR2
-•	Memory			8 Gb (microSD)
-•	Communication		WiFi 802.11 b/g/n, Bluetooth 4.1
-•	Connectors			microUSB, miniHDMI
-•	Screen size			2.8’
-•	Screen resolution		320x240px
+## Components
+* Raspberry Pi Zero W
+* Paspberry Pi Camera
+* SD-card (min 8 Gb)
+* Arduino Nano
+* IR-sensor TCRT5000
+* Charge controller TP4056
+* GPS модуль UbloX NEO-6M-0-001
+* 18650 Li-ion accumulator
+* Glasses (any type)
 
+## Further development of the system
 
- 
-Components:
-•	Raspberry Pi Zero W
-•	Paspberry Pi Camera
-•	SD-card (min 8 Gb)
-•	Arduino Nano
-•	IR-sensor TCRT5000
-•	Charge controller TP4056
-•	GPS модуль UbloX NEO-6M-0-001
-•	18650 Li-ion accumulator
-•	Glasses (any type)
-
-Further development of the system
-
-•	Adding additional data to send along with the photo (geotag, position of glasses, etc.)
-•	Different commands for different flash combinations (double, triple, etc.)
-•	Adding a second sensor and using different combinations of two eye blinks
-•	Shooting a short video instead of a photo
-•	Expanded functionality of the master device (interface displaying connected devices, photo gallery, etc.)
-•	Web server to work on the global network
-•	Web application to receive data from a web server (displaying your own photos, a gallery of photos of other glasses using various filters, etc.)
-•	Mobile application to access data from a web server
-•	Formation of business logic for the service
+* Adding additional data to send along with the photo (geotag, position of glasses, etc.)
+* Different commands for different flash combinations (double, triple, etc.)
+* Adding a second sensor and using different combinations of two eye blinks
+* Shooting a short video instead of a photo
+* Expanded functionality of the master device (interface displaying connected devices, photo gallery, etc.)
+* Web server to work on the global network
+* Web application to receive data from a web server (displaying your own photos, a gallery of photos of other glasses using various filters, etc.)
+* Mobile application to access data from a web server
+* Formation of business logic for the service
 
  
 ## Photos
-
 ![User device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.User_device.jpg)
 ![User device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.User_device2.jpg)
 ![User device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.User_device3.jpg)
