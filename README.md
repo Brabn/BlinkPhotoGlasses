@@ -45,7 +45,7 @@ The master device emulates the functions of a web server. When you turn on sever
  
 ## Main system parameters for User device:
 
-| Parameter | Value | 
+
 |:------------------|:----------------------|
 | * Main controller | - Raspberry Pi Zero W |
 | * Main processor | 1 GGh, ARM1176JZ-F |
