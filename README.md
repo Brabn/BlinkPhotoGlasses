@@ -2,7 +2,7 @@
 Glasses that take photos of the field of view using a blinking sensor and transfer the image to the cloud for further processing
 
 ## General service description
-![Set of assembled user devices](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.User_devicesX6_2.jpg)
+![Set of assembled user devices](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.User_device.jpg)
 The system consists of a set of user devices in the form of glasses with a built-in camera and a sensor that detects blinking.
 User devices connect to the network via Wi-Fi (directly) or Bluetooth (with intermediate mobile device)
 When the sensor is triggered (a single blink or a specified set of eyes movement), the user’s field of view is captured and a time stamp with a geotag is sent to the central server. In this case, the photo is saved in the device’s memory, which stores a certain number of recent photos with the corresponding timestamps and geotags.
