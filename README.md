@@ -96,15 +96,15 @@ The master device emulates the functions of a web server. When you turn on sever
 
 ## Further development of the system
 
-[ ] Adding additional data to send along with the photo (geotag, position of glasses, etc.)
-[ ] Different commands for different flash combinations (double, triple, etc.)
-[ ] Adding a second sensor and using different combinations of two eye blinks
-[ ] Shooting a short video instead of a photo
-[ ] Expanded functionality of the master device (interface displaying connected devices, photo gallery, etc.)
-[ ] Web server to work on the global network
-[ ] Web application to receive data from a web server (displaying your own photos, a gallery of photos of other glasses using various filters, etc.)
-[ ] Mobile application to access data from a web server
-[ ] Formation of business logic for the service
+- [ ] Adding additional data to send along with the photo (geotag, position of glasses, etc.)
+- [ ] Different commands for different flash combinations (double, triple, etc.)
+- [ ] Adding a second sensor and using different combinations of two eye blinks
+- [ ] Shooting a short video instead of a photo
+- [ ] Expanded functionality of the master device (interface displaying connected devices, photo gallery, etc.)
+- [ ] Web server to work on the global network
+- [ ] Web application to receive data from a web server (displaying your own photos, a gallery of photos of other glasses using various filters, etc.)
+- [ ] Mobile application to access data from a web server
+- [ ] Formation of business logic for the service
  
 ## Photos
 ![User device](https://github.com/Brabn/BlinkPhotoGlasses/blob/main/Photos/BlinkPhotoGlasses.User_device.jpg)
