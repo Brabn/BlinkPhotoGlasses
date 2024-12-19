@@ -1,5 +1,5 @@
 # BlinkPhotoGlasses
-Glasses that take photos of the field of view using a blinking sensor and transfer the image to the cloud for further processing
+[Smart glasses with a blinking sensor](https://techi-news.com/Projects/Smart-glasses-with-blink-detector) that take photos of the field of view and transfer the image to the cloud for further processing
 
 ## General service description
 
